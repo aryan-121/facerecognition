@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.particles{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.aligning{
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 55fr);
+  column-gap: 25px;
+  row-gap: 25px;
+  grid-template-rows: auto;
+}
+
+@media (max-width: 768px){
+  .aligning{
+    display: block;
+    align-items: center;
+  }
+}
